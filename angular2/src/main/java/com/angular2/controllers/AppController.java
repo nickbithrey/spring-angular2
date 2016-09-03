@@ -8,7 +8,7 @@ public class AppController {
 
 	@RequestMapping(value = "/home")
 	public String home() {
-		return "index.html";
+		return "index";
 	}
 
 }
