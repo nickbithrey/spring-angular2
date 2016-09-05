@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan({ "com.angular2.configuration", "com.angular2.controllers" })
+@ComponentScan({ "com.angular2.configuration", "com.angular2.controllers", "com.angular2.rest" })
 public class WebAppConfig extends WebMvcConfigurerAdapter {
 
 	@Bean

@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 import {CoursesComponent} from './courses.component';
 import {AuthorsComponent} from './authors.component';
 
@@ -7,7 +7,7 @@ import {AuthorsComponent} from './authors.component';
     template: `<h1>My First Angular 2 App</h1>
 		<courses></courses>
 		<authors></authors>
-		`,
-	directives: [CoursesComponent, AuthorsComponent]
+		`//,
+	//directives: [CoursesComponent, AuthorsComponent]
 })
 export class AppComponent { }
