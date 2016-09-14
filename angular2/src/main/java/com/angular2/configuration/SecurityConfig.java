@@ -19,7 +19,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
-		http.authorizeRequests().antMatchers("/**").access("hasRole('ROLE_ADMIN')").and().formLogin();
+		http.authorizeRequests()
+				.antMatchers("/", "/home", "/node_modules/**", "/app/**", "/systemjs.config.js", "/api/**").permitAll()
+				.antMatchers("/**").access("hasRole('ROLE_ADMIN')").and().formLogin();
 
 	}
 }
